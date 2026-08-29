@@ -3,7 +3,7 @@
 
 Pulls each platform's tarball checksum straight from that release's
 .sha256 asset (published by scout's own release workflow, see
-scripts/package-release.sh in daniel13112001/scout) rather than
+scripts/package-release.sh in dyakubu/scout) rather than
 re-downloading and re-hashing the tarballs itself.
 
 Usage: scripts/bump.py v0.1.0
@@ -13,7 +13,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-REPO = "daniel13112001/scout"
+REPO = "dyakubu/scout"
 PLATFORMS = ["darwin-arm64", "linux-amd64", "linux-arm64"]
 
 
