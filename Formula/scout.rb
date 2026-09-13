@@ -2,14 +2,14 @@ class Scout < Formula
   desc "Local, offline semantic search over your files using on-device embeddings"
   homepage "https://github.com/dyakubu/scout"
   # Bumped by scripts/bump.py after each scout release - see its usage note.
-  version "0.0.11"
+  version "0.0.13"
   # No LICENSE file exists in dyakubu/scout yet - add one there,
   # then set this field to match (e.g. license "MIT").
 
   on_macos do
     on_arm do
       url "https://github.com/dyakubu/scout/releases/download/v#{version}/scout-v#{version}-darwin-arm64.tar.gz"
-      sha256 "5dd8d4989cd77ef4d029434b974fada4525777f91cb26a84152ff622ffab0cff"
+      sha256 "fd588a8a90e66b7e55da4a4d226615af06cf453ca83419df4b5042ed2d149d41"
     end
     on_intel do
       # ONNX Runtime stopped publishing macOS x86_64 builds after v1.23.2.
@@ -23,11 +23,11 @@ class Scout < Formula
   on_linux do
     on_intel do
       url "https://github.com/dyakubu/scout/releases/download/v#{version}/scout-v#{version}-linux-amd64.tar.gz"
-      sha256 "16d67148d6ea192b1547f1402f59f1cd59003af5a1da1da90d7268765eed1e3c"
+      sha256 "888556d460e6958738bb090e86240322ebb1fa574923173bbd9ed712177d06ca"
     end
     on_arm do
       url "https://github.com/dyakubu/scout/releases/download/v#{version}/scout-v#{version}-linux-arm64.tar.gz"
-      sha256 "d36065e6272004cecbc344b768a62497b8d69eccd31f219f9caad1ac47f315bd"
+      sha256 "9dc41ea6fc839fd6e77995f59f8a331903e87da39a1aa2e8555cdcf2f2ee66ac"
     end
   end
 
